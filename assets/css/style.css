@@ -171,16 +171,16 @@ input::placeholder {
   background-color: #d1e8fa;
 }
 header .nav-desktop .navbar-nav a {
-  font-family: 'IRANYekanX600';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 23px;
-color: var(--purple-color) !important;
-margin: 0 12px;
+  font-family: "IRANYekanX600";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--purple-color) !important;
+  margin: 0 12px;
 }
 header .nav-desktop .navbar-nav a:hover {
-  color: #1A8CE7 !important;
+  color: #1a8ce7 !important;
 }
 /* Index */
 .top-header {
@@ -201,37 +201,52 @@ header .nav-desktop .navbar-nav a:hover {
 .left-top-head ul {
   display: flex;
 }
-.left-top-head ul li a{
+.left-top-head ul li a {
   color: var(--purple-color);
 }
-.ltg.list-button {
-  display: grid;
-  grid-template-columns: 1fr;
-  width: 100%;
-}
-.ltg.list-button .column {
-  width: 90%;
-  height: 200px;
+.list-sim-menu {
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: red;
-  margin: 10px;
-  box-shadow: 0 0 0 5px #eee;
+  justify-content: space-between;
 }
-.ltg {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.submenu-wrap {
+  position: absolute;
+  top: 100%;
+  right: 10%;
+  width: 401px;
+  max-height: 0px;
+  background-color: var(--white-color);
+  overflow: hidden;
+  transition: max-height 0.5s;
+  border-radius: 0px 0px 24px 24px;
 }
-.ltg .column {
-  width: 90%;
-  height: 200px;
-  display: flex;
-  justify-content: center;
+.submenu-wrap a {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.submenu-wrap.openmenu {
+  max-height: 358px;
+  border-top: 1px solid var(--gray-color);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 0px 0px 24px 24px;
+}
+.submenu {
+  /* padding: 20px;
+  margin: 10px; */
+  height: 358px;
+}
+.submenu .list-sim-menu p {
+  text-align: right;
+}
+.list-button , .grid-button{
+  height: 40px;
+  width: 144px;
+  border: 1px solid var(--gray-color);
+  border-radius: 8px;
+  cursor: pointer;
   align-items: center;
-  background-color: red;
-  margin: 10px;
-  box-shadow: 0 0 0 5px #eee;
+  justify-content: space-evenly;
+  margin-left: 16px;
 }
 .intro {
   margin-top: 32px;
@@ -239,11 +254,12 @@ header .nav-desktop .navbar-nav a:hover {
 .intro .banner {
   position: relative;
   background-image: url("../img/baner.png");
-  width: 1176px;
+  width: 100%;
   height: 400px;
   background-size: cover;
   background-size: 100%;
   background-position: center;
+  background-repeat: no-repeat;
   z-index: -1;
 }
 .intro .search-advanced {
@@ -269,8 +285,12 @@ header .nav-desktop .navbar-nav a:hover {
   padding: 12px 32px 8px 32px;
 }
 .details-advanced .top-search {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 15px;
+}
+.tel-box-input {
+  grid-column: span 2 / span 2;
 }
 .details-advanced .tel-box-input input {
   width: 40px;
@@ -281,7 +301,7 @@ header .nav-desktop .navbar-nav a:hover {
   margin: 8px;
 }
 
-.select-boxes-search select {
+.custom-select-boxes {
   width: 180px;
   height: 40px;
   background: var(--white-color);
@@ -289,7 +309,7 @@ header .nav-desktop .navbar-nav a:hover {
   border-radius: 8px;
   margin: 8px;
 }
-.input-boxes-search input {
+.input-boxes-search   {
   width: 180px;
   height: 40px;
   background: var(--white-color);
@@ -338,6 +358,9 @@ header .nav-desktop .navbar-nav a:hover {
 }
 .code-simcart-list .container-custom {
   justify-content: space-between;
+  display: flex; 
+  align-items: center;
+  flex-wrap: wrap;
 }
 .code-simcart-list h6 {
   padding: 32px 0;
@@ -423,6 +446,28 @@ td {
 .card-grid-list-tel {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+.grid-cars-list .box-card {
+  box-shadow: 0px -1px 12px rgba(0, 0, 0, 0.08),
+    0px 6px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  height: 280px;
+}
+.grid-cars-list .box-card:hover {
+  border: 1px solid #1a8ce7;
+}
+.grid-cars-list .box-card .title-box-card p {
+  padding: 0px 27px;
+}
+.grid-cars-list img {
+  width: 48px;
+  height: 48px;
+  margin: 16px 0;
+}
+.button-view-list {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .box-card {
@@ -672,7 +717,7 @@ td {
   display: inline-block;
 }
 .site-footer .social-icons {
-  text-align: right;
+  text-align: left;
 }
 .site-footer .social-icons a {
   width: 40px;
@@ -693,7 +738,7 @@ td {
 }
 @media (max-width: 991px) {
   .site-footer [class^="col-"] {
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
   }
 }
 @media (max-width: 767px) {

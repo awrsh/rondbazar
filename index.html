@@ -25,7 +25,7 @@
                         </div>
                         <div class="pr-37">
                             <i class="bi bi-calendar-event"></i>
-                            پشتیبانی: <span id="demo"></span>
+                            امروز: <span id="demo"></span>
                         </div>
                     </div>
                     <div class="left-top-head">
@@ -43,7 +43,27 @@
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-light nav-desktop bg-white">
+        <div class="nav-mobile">
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"><i class="bi bi-list"></i></button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasLeftLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                    <div class="m-auto">
+                        <a class="navbar-brand" href="#">
+                            <img src="assets/img/Rond-Bazar-Logo-1-copy copy 1.png" alt="logo" width="70" height="70"
+                                class="d-inline-block align-text-top">
+                        </a>
+                    </div>
+                </div>
+                <div class="offcanvas-body">
+                    ...
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-light nav-desktop bg-white nav-desktop">
             <div class="container-custom">
                 <div class="d-flex align-items-center">
                     <a class="navbar-brand" href="#">
@@ -53,12 +73,112 @@
                     <nav class="navbar navbar-expand-lg navbar-light">
                         <div class="container-fluid">
                             <div class="navbar-nav">
-                                <a class="nav-link" aria-current="page" href="#">همراه اول <i class="bi bi-chevron-down"></i></a>
+                                <a class="nav-link" aria-current="page" href="#" onclick="ToggleMenu()">
+                                    همراه اول
+                                    <i class="bi bi-chevron-down"></i>
+                                    <div class="submenu-wrap" id="subMenu">
+                                        <div class="submenu">
+                                            <div class="list-sim-menu">
+                                                <ul>
+                                                    <p>همراه اول دائمی</p>
+                                                    <li>
+                                                        <a href="#">
+                                                            0912
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            0912
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            0912
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            0912
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            0912
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            0912
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            0912
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            0912
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <div class="text-start">
+                                                        <p>همراه اول اعتباری</p>
+                                                    </div>
+                                                    <li>
+                                                        <a href="#">
+                                                            0912
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            0912
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            0912
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            0912
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            0912
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            0912
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            0912
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            0912
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
                                 <a class="nav-link" href="#"> ایرانسل <i class="bi bi-chevron-down"></i></a>
                                 <a class="nav-link" href="#">اخبار مهم</a>
                                 <a class="nav-link" href="#">وبلاگ</a>
                                 <a class="nav-link" href="#">درباره رند بازار</a>
                                 <a class="nav-link" href="#">تماس باما</a>
+
+
+
                             </div>
                         </div>
                     </nav>
@@ -71,9 +191,7 @@
     <main>
         <div class="container-custom">
             <div class="intro">
-                <div class="banner">
-
-                </div>
+                <div class="banner"></div>
                 <div class="search-advanced">
                     <h6>جستجو از بین هزاران سیم کارت از سراسر کشور</h6>
                     <div class="details-advanced">
@@ -87,53 +205,56 @@
                                 <input type="tel">
                                 <input type="tel">
                             </div>
-                            <div class="select-boxes-search">
-                                <select class="custom-select-boxes" aria-label="Default select example">
-                                    <option selected>پیش شماره</option>
-                                    <option value="1">بیشترین قیمت</option>
-                                    <option value="2">کمترین قیمت</option>
-                                    <option value="3">تخفیف ویژه</option>
-                                </select>
-                                <select class="custom-select-boxes" aria-label="Default select example">
-                                    <option selected>نوع خط</option>
-                                    <option value="1">بیشترین قیمت</option>
-                                    <option value="2">کمترین قیمت</option>
-                                    <option value="3">تخفیف ویژه</option>
-                                </select>
-                                <select class="custom-select-boxes" aria-label="Default select example">
-                                    <option selected>اپراتور</option>
-                                    <option value="1">بیشترین قیمت</option>
-                                    <option value="2">کمترین قیمت</option>
-                                    <option value="3">تخفیف ویژه</option>
-                                </select>
-                            </div>
+                            <select class="custom-select-boxes" aria-label="Default select example">
+                                <option selected>پیش شماره</option>
+                                <option value="1">بیشترین قیمت</option>
+                                <option value="2">کمترین قیمت</option>
+                                <option value="3">تخفیف ویژه</option>
+                            </select>
+                            <select class="custom-select-boxes" aria-label="Default select example">
+                                <option selected>نوع خط</option>
+                                <option value="1">بیشترین قیمت</option>
+                                <option value="2">کمترین قیمت</option>
+                                <option value="3">تخفیف ویژه</option>
+                            </select>
+                            <select class="custom-select-boxes" aria-label="Default select example">
+                                <option selected>اپراتور</option>
+                                <option value="1">بیشترین قیمت</option>
+                                <option value="2">کمترین قیمت</option>
+                                <option value="3">تخفیف ویژه</option>
+                            </select>
+                            <select class="custom-select-boxes ms-0" aria-label="Default select example">
+                                <option selected>نوع رند</option>
+                                <option value="1">بیشترین قیمت</option>
+                                <option value="2">کمترین قیمت</option>
+                                <option value="3">تخفیف ویژه</option>
+                            </select>
+                            <select class="custom-select-boxes" aria-label="Default select example">
+                                <option selected>وضعیت</option>
+                                <option value="1">بیشترین قیمت</option>
+                                <option value="2">کمترین قیمت</option>
+                                <option value="3">تخفیف ویژه</option>
+                            </select>
+                            <select class="custom-select-boxes" aria-label="Default select example">
+                                <option selected>قیمت</option>
+                                <option value="1">بیشترین قیمت</option>
+                                <option value="2">کمترین قیمت</option>
+                                <option value="3">تخفیف ویژه</option>
+                            </select>
+                            <input class="input-boxes-search" type="tel" placeholder="حداکثر قیمت(تومان) از">
+                            <input class="input-boxes-search" type="tel" placeholder="حداکثر قیمت(تومان) تا">
+                            <!-- <div class="select-boxes-search"></div> -->
+                            <!-- <div class="select-boxes-search"> -->
+
+                            <!-- </div> -->
                         </div>
-                        <div class="bottpm-search">
-                            <div class="select-boxes-search">
-                                <select class="custom-select-boxes ms-0" aria-label="Default select example">
-                                    <option selected>نوع رند</option>
-                                    <option value="1">بیشترین قیمت</option>
-                                    <option value="2">کمترین قیمت</option>
-                                    <option value="3">تخفیف ویژه</option>
-                                </select>
-                                <select class="custom-select-boxes" aria-label="Default select example">
-                                    <option selected>وضعیت</option>
-                                    <option value="1">بیشترین قیمت</option>
-                                    <option value="2">کمترین قیمت</option>
-                                    <option value="3">تخفیف ویژه</option>
-                                </select>
-                                <select class="custom-select-boxes" aria-label="Default select example">
-                                    <option selected>قیمت</option>
-                                    <option value="1">بیشترین قیمت</option>
-                                    <option value="2">کمترین قیمت</option>
-                                    <option value="3">تخفیف ویژه</option>
-                                </select>
-                            </div>
-                            <div class="input-boxes-search">
-                                <input type="tel" placeholder="حداکثر قیمت(تومان) از">
-                                <input type="tel" placeholder="حداکثر قیمت(تومان) تا">
-                            </div>
-                        </div>
+                        <!-- <div class="bottpm-search"> -->
+
+                        <!-- <div class="input-boxes-search"> -->
+                        <!-- <input type="tel" placeholder="حداکثر قیمت(تومان) از">
+                                <input type="tel" placeholder="حداکثر قیمت(تومان) تا"> -->
+                        <!-- </div> -->
+                        <!-- </div> -->
                         <div class="text-center">
                             <button type="submit" class="button-search">جستجو سیم کارت</button>
                         </div>
@@ -168,7 +289,7 @@
 
         <div class="code-simcart-list">
             <h6 class="text-center">کدهای سیم کارت 0912</h6>
-            <div class="container-custom d-flex flex-wrap">
+            <div class="container-custom  ">
                 <div class="box-code-simcart">
                     <div class="list-simcart">
                         <div>
@@ -251,45 +372,36 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="icon-list-view">
-                <div class="list-button">
-                    <i class="bi bi-list"></i>
-                </div>
-                <div class="grid-button">
-                    <i class="bi bi-list"></i>
-                </div>
+        <div class="icon-list-view">
+            <!-- <div class="list-button">
+                <i class="bi bi-list"></i>
             </div>
-            <div class="ltg">
-                <div class="column">column 1</div>
-                <div class="column">column 1</div>
-                <div class="column">column 1</div>
-                <div class="column">column 1</div>
+            <div class="grid-button">
+                <i class="bi bi-list"></i>
             </div> -->
-        <div class="container-custom">
+        </div>
+        <div class="container-custom d-none">
             <div class="table-line-list">
                 <h6>ویترین رند بازار</h6>
                 <div class="button-view-list">
                     <div class="d-flex align-items-center">
-                        <div class="col-3 d-flex align-items-center">
+                        <div class="d-flex list-button">
                             <i class="bi bi-list"></i>
                             نمایش لیست
                         </div>
-                        <div class="col-3 d-flex align-items-center">
+                        <div class="d-flex grid-button">
                             <i class="bi bi-grid-3x3-gap-fill"></i>
                             نمایش کارت
                         </div>
                     </div>
                     <div class="d-flex align-items-center">
-                        <div class="col-2">
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>فیلتر</option>
+                        <div class="select-boxes-search">
+                            <select class="custom-select-boxes" aria-label="Default select example">
+                                <option selected>بیشترین قیمت</option>
                                 <option value="1">بیشترین قیمت</option>
                                 <option value="2">کمترین قیمت</option>
-                                <option value="3">تخفیف ویژه</option>
                             </select>
-                        </div>
-                        <div class="col-2">
-                            <select class="form-select" aria-label="Default select example">
+                            <select class="custom-select-boxes" aria-label="Default select example">
                                 <option selected>12</option>
                                 <option value="1">24</option>
                                 <option value="2">48</option>
@@ -298,160 +410,344 @@
                         </div>
                     </div>
                 </div>
-                <table class="table table-index-custom">
-                    <thead>
-                        <tr>
-                            <th scope="col">اپراتور</th>
-                            <th scope="col">سیم کارت</th>
-                            <th scope="col">قیمت(تومان)</th>
-                            <th scope="col">وضعیت</th>
-                            <th scope="col">نوع رندی</th>
-                            <th scope="col">جزئیات و تماس</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">
-                                <img class="operator-img" src="assets/img/Frame 1285.png" alt="">
-                            </th>
-                            <td>091212345678</td>
-                            <td>46,000,000</td>
-                            <td>در حد صفر</td>
-                            <td>رند حروفی</td>
-                            <td>
-                                <a href="tel:091212345678" class="tel-info-user">
+                <div class="table-responsive">
+                    <table class="table table-index-custom">
+                        <thead>
+                            <tr>
+                                <th scope="col">اپراتور</th>
+                                <th scope="col">سیم کارت</th>
+                                <th scope="col">قیمت(تومان)</th>
+                                <th scope="col">وضعیت</th>
+                                <th scope="col">نوع رندی</th>
+                                <th scope="col">جزئیات و تماس</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <img class="operator-img" src="assets/img/Frame 1285.png" alt="">
+                                </th>
+                                <td>091212345678</td>
+                                <td>46,000,000</td>
+                                <td>در حد صفر</td>
+                                <td>رند حروفی</td>
+                                <td>
+                                    <a href="tel:091212345678" class="tel-info-user">
+                                        اطلاعات تماس
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <img class="operator-img" src="assets/img/Frame 1285.png" alt="">
+                                </th>
+                                <td>091212345678</td>
+                                <td>46,000,000</td>
+                                <td>در حد صفر</td>
+                                <td>رند حروفی</td>
+                                <td>
+                                    <a href="tel:091212345678" class="tel-info-user">
+                                        اطلاعات تماس
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <img class="operator-img" src="assets/img/Frame 1285 (1).png" alt="">
+                                </th>
+                                <td>091212345678</td>
+                                <td>46,000,000</td>
+                                <td>در حد صفر</td>
+                                <td>رند حروفی</td>
+                                <td>
+                                    <a href="tel:091212345678" class="tel-info-user">
+                                        اطلاعات تماس
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <img class="operator-img" src="assets/img/Frame 1285 (1).png" alt="">
+                                </th>
+                                <td>091212345678</td>
+                                <td>46,000,000</td>
+                                <td>در حد صفر</td>
+                                <td>رند حروفی</td>
+                                <td>
+                                    <a href="tel:091212345678" class="tel-info-user">
+                                        اطلاعات تماس
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <img class="operator-img" src="assets/img/Frame 1285 (1).png" alt="">
+                                </th>
+                                <td>091212345678</td>
+                                <td>46,000,000</td>
+                                <td>در حد صفر</td>
+                                <td>رند حروفی</td>
+                                <td>
+                                    <a href="tel:091212345678" class="tel-info-user">
+                                        اطلاعات تماس
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <img class="operator-img" src="assets/img/Frame 1285 (1).png" alt="">
+                                </th>
+                                <td>091212345678</td>
+                                <td>46,000,000</td>
+                                <td>در حد صفر</td>
+                                <td>رند حروفی</td>
+                                <td>
+                                    <a href="tel:091212345678" class="tel-info-user">
+                                        اطلاعات تماس
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <img class="operator-img" src="assets/img/Frame 1285 (1).png" alt="">
+                                </th>
+                                <td>091212345678</td>
+                                <td>46,000,000</td>
+                                <td>در حد صفر</td>
+                                <td>رند حروفی</td>
+                                <td>
+                                    <a href="tel:091212345678" class="tel-info-user">
+                                        اطلاعات تماس
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <img class="operator-img" src="assets/img/Frame 1285 (1).png" alt="">
+                                </th>
+                                <td>091212345678</td>
+                                <td>46,000,000</td>
+                                <td>در حد صفر</td>
+                                <td>رند حروفی</td>
+                                <td>
+                                    <a href="tel:091212345678" class="tel-info-user">
+                                        اطلاعات تماس
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <img class="operator-img" src="assets/img/Frame 1285 (1).png" alt="">
+                                </th>
+                                <td>091212345678</td>
+                                <td>46,000,000</td>
+                                <td>در حد صفر</td>
+                                <td>رند حروفی</td>
+                                <td>
+                                    <a href="tel:091212345678" class="tel-info-user">
+                                        اطلاعات تماس
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <img class="operator-img" src="assets/img/Frame 1285 (1).png" alt="">
+                                </th>
+                                <td>091212345678</td>
+                                <td>46,000,000</td>
+                                <td>در حد صفر</td>
+                                <td>رند حروفی</td>
+                                <td>
+                                    <a href="tel:091212345678" class="tel-info-user">
+                                        اطلاعات تماس
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card-grid-list-tel grid-cars-list">
+                    <div class="box-card">
+                        <div class="title-box-card">
+                            <img src="assets/img/Frame 1285 (1).png" alt="">
+                            <p>09123456789</p>
+                        </div>
+                        <div class="details-list-tel">
+                            <p>در حد صفر ، رند تصادفی</p>
+                            <strong>46,00,000 تومان</strong>
+                            <div class="pt16-px24">
+                                <a href="#">
                                     اطلاعات تماس
                                 </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <img class="operator-img" src="assets/img/Frame 1285.png" alt="">
-                            </th>
-                            <td>091212345678</td>
-                            <td>46,000,000</td>
-                            <td>در حد صفر</td>
-                            <td>رند حروفی</td>
-                            <td>
-                                <a href="tel:091212345678" class="tel-info-user">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-card">
+                        <div class="title-box-card">
+                            <img src="assets/img/Frame 1285.png" alt="">
+                            <p>09123456789</p>
+                        </div>
+                        <div class="details-list-tel">
+                            <p>خرید سیم کارت 0912 صفر</p>
+                            <strong>46,00,000 تومان</strong>
+                            <div class="pt16-px24">
+                                <a href="#">
                                     اطلاعات تماس
                                 </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <img class="operator-img" src="assets/img/Frame 1285 (1).png" alt="">
-                            </th>
-                            <td>091212345678</td>
-                            <td>46,000,000</td>
-                            <td>در حد صفر</td>
-                            <td>رند حروفی</td>
-                            <td>
-                                <a href="tel:091212345678" class="tel-info-user">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-card">
+                        <div class="title-box-card">
+                            <img src="assets/img/Frame 1285 (1).png" alt="">
+                            <p>09123456789</p>
+                        </div>
+                        <div class="details-list-tel">
+                            <p>در حد صفر ، رند تصادفی</p>
+                            <strong>46,00,000 تومان</strong>
+                            <div class="pt16-px24">
+                                <a href="#">
                                     اطلاعات تماس
                                 </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <img class="operator-img" src="assets/img/Frame 1285 (1).png" alt="">
-                            </th>
-                            <td>091212345678</td>
-                            <td>46,000,000</td>
-                            <td>در حد صفر</td>
-                            <td>رند حروفی</td>
-                            <td>
-                                <a href="tel:091212345678" class="tel-info-user">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-card">
+                        <div class="title-box-card">
+                            <img src="assets/img/Frame 1285 (1).png" alt="">
+                            <p>09123456789</p>
+                        </div>
+                        <div class="details-list-tel">
+                            <p>در حد صفر ، رند تصادفی</p>
+                            <strong>46,00,000 تومان</strong>
+                            <div class="pt16-px24">
+                                <a href="#">
                                     اطلاعات تماس
                                 </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <img class="operator-img" src="assets/img/Frame 1285 (1).png" alt="">
-                            </th>
-                            <td>091212345678</td>
-                            <td>46,000,000</td>
-                            <td>در حد صفر</td>
-                            <td>رند حروفی</td>
-                            <td>
-                                <a href="tel:091212345678" class="tel-info-user">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-card">
+                        <div class="title-box-card">
+                            <img src="assets/img/Frame 1285 (1).png" alt="">
+                            <p>09123456789</p>
+                        </div>
+                        <div class="details-list-tel">
+                            <p>در حد صفر ، رند تصادفی</p>
+                            <strong>46,00,000 تومان</strong>
+                            <div class="pt16-px24">
+                                <a href="#">
                                     اطلاعات تماس
                                 </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <img class="operator-img" src="assets/img/Frame 1285 (1).png" alt="">
-                            </th>
-                            <td>091212345678</td>
-                            <td>46,000,000</td>
-                            <td>در حد صفر</td>
-                            <td>رند حروفی</td>
-                            <td>
-                                <a href="tel:091212345678" class="tel-info-user">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-card">
+                        <div class="title-box-card">
+                            <img src="assets/img/Frame 1285 (1).png" alt="">
+                            <p>09123456789</p>
+                        </div>
+                        <div class="details-list-tel">
+                            <p>در حد صفر ، رند تصادفی</p>
+                            <strong>46,00,000 تومان</strong>
+                            <div class="pt16-px24">
+                                <a href="#">
                                     اطلاعات تماس
                                 </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <img class="operator-img" src="assets/img/Frame 1285 (1).png" alt="">
-                            </th>
-                            <td>091212345678</td>
-                            <td>46,000,000</td>
-                            <td>در حد صفر</td>
-                            <td>رند حروفی</td>
-                            <td>
-                                <a href="tel:091212345678" class="tel-info-user">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-card">
+                        <div class="title-box-card">
+                            <img src="assets/img/Frame 1285 (1).png" alt="">
+                            <p>09123456789</p>
+                        </div>
+                        <div class="details-list-tel">
+                            <p>در حد صفر ، رند تصادفی</p>
+                            <strong>46,00,000 تومان</strong>
+                            <div class="pt16-px24">
+                                <a href="#">
                                     اطلاعات تماس
                                 </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <img class="operator-img" src="assets/img/Frame 1285 (1).png" alt="">
-                            </th>
-                            <td>091212345678</td>
-                            <td>46,000,000</td>
-                            <td>در حد صفر</td>
-                            <td>رند حروفی</td>
-                            <td>
-                                <a href="tel:091212345678" class="tel-info-user">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-card">
+                        <div class="title-box-card">
+                            <img src="assets/img/Frame 1285 (1).png" alt="">
+                            <p>09123456789</p>
+                        </div>
+                        <div class="details-list-tel">
+                            <p>در حد صفر ، رند تصادفی</p>
+                            <strong>46,00,000 تومان</strong>
+                            <div class="pt16-px24">
+                                <a href="#">
                                     اطلاعات تماس
                                 </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <img class="operator-img" src="assets/img/Frame 1285 (1).png" alt="">
-                            </th>
-                            <td>091212345678</td>
-                            <td>46,000,000</td>
-                            <td>در حد صفر</td>
-                            <td>رند حروفی</td>
-                            <td>
-                                <a href="tel:091212345678" class="tel-info-user">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-card">
+                        <div class="title-box-card">
+                            <img src="assets/img/Frame 1285 (1).png" alt="">
+                            <p>09123456789</p>
+                        </div>
+                        <div class="details-list-tel">
+                            <p>در حد صفر ، رند تصادفی</p>
+                            <strong>46,00,000 تومان</strong>
+                            <div class="pt16-px24">
+                                <a href="#">
                                     اطلاعات تماس
                                 </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <img class="operator-img" src="assets/img/Frame 1285 (1).png" alt="">
-                            </th>
-                            <td>091212345678</td>
-                            <td>46,000,000</td>
-                            <td>در حد صفر</td>
-                            <td>رند حروفی</td>
-                            <td>
-                                <a href="tel:091212345678" class="tel-info-user">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-card">
+                        <div class="title-box-card">
+                            <img src="assets/img/Frame 1285 (1).png" alt="">
+                            <p>09123456789</p>
+                        </div>
+                        <div class="details-list-tel">
+                            <p>در حد صفر ، رند تصادفی</p>
+                            <strong>46,00,000 تومان</strong>
+                            <div class="pt16-px24">
+                                <a href="#">
                                     اطلاعات تماس
                                 </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-card">
+                        <div class="title-box-card">
+                            <img src="assets/img/Frame 1285 (1).png" alt="">
+                            <p>09123456789</p>
+                        </div>
+                        <div class="details-list-tel">
+                            <p>در حد صفر ، رند تصادفی</p>
+                            <strong>46,00,000 تومان</strong>
+                            <div class="pt16-px24">
+                                <a href="#">
+                                    اطلاعات تماس
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-card">
+                        <div class="title-box-card">
+                            <img src="assets/img/Frame 1285 (1).png" alt="">
+                            <p>09123456789</p>
+                        </div>
+                        <div class="details-list-tel">
+                            <p>در حد صفر ، رند تصادفی</p>
+                            <strong>46,00,000 تومان</strong>
+                            <div class="pt16-px24">
+                                <a href="#">
+                                    اطلاعات تماس
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div id="app" class="container">
                     <ul class="page">
                         <li class="page__btn"><i class="bi bi-chevron-right"></i></li>
@@ -699,7 +995,6 @@
                 </div>
             </div>
         </div>
-        </div>
     </main>
 
 
@@ -747,13 +1042,13 @@
         <div class="container-fluid py-1" style="background-color: #D1E8FA;">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-8 col-sm-6 col-xs-12">
+                    <div class="col-md-6 col-12 col-xs-12">
                         <p class="copyright-text">
                             تمامی حقوق این وبسایت به رندبازار تعلق دارد.
                         </p>
                     </div>
 
-                    <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
                         <ul class="social-icons">
                             <li><a class="facebook" href="#"><i class="bi bi-instagram"></i></a></li>
                             <li><a class="twitter" href="#"><i class="bi bi-whatsapp"></i></a></li>
@@ -771,16 +1066,19 @@
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-
+        let subMenu = document.getElementById("subMenu")
+        function ToggleMenu() {
+            subMenu.classList.toggle("openmenu")
+        }
         var date = new Date();
         var current_date = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
         document.getElementById("demo").innerHTML = current_date;
 
         const list = document.querySelector(".list-button")
         const grid = document.querySelector(".grid-button")
-        const ltg = document.querySelector(".ltg")
+        // const ltg = document.querySelector(".ltg")
         const listparent = document.querySelector(".table-index-custom")
-        const gridparent = document.querySelector(".card-grid-list-tel")
+        const gridparent = document.querySelector(".grid-cars-list")
         // parrent table
         // const ltg = document.querySelector(".table-index-custom")
         // parent grid
@@ -788,17 +1086,22 @@
 
 
         list.addEventListener("click", () => {
-            list.classList.add("d-none")
-            grid.classList.remove("d-none")
+            list.classList.add("d-block")
+            // grid.classList.remove("d-block")
             listparent.classList.remove("d-none")
             gridparent.classList.add("d-none")
         })
         grid.addEventListener("click", () => {
-            list.classList.remove("d-none")
-            grid.classList.add("d-none")
+            // list.classList.remove("d-none")
+            grid.classList.add("d-block")
             listparent.classList.add("d-none")
             gridparent.classList.remove("d-none")
         })
+        list.classList.add("d-block")
+        // grid.classList.remove("d-block")
+        listparent.classList.remove("d-none")
+        gridparent.classList.add("d-none")
+
 
     </script>
 </body>
