@@ -1,10 +1,14 @@
 @media (max-width: 992px) {
+  .buy-box-simcart-single {
+    margin-top: 24px;
+  }
   .nav-desktop {
     display: none;
   }
   .nav-mobile {
     display: block;
     padding: 15px;
+    background-color: #fff;
   }
   .querysize {
     height: 80vh;
@@ -69,12 +73,29 @@
   }
   .code-simcart-list .container-custom {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 8px;
+  }
+  .box-code-simcart .list-simcart img {
+    width: 40px;
+    height: 40px;
+  }
+  .box-code-simcart .list-simcart > div {
+    padding-bottom: 5px !important;
+  }
+  .box-code-simcart{
+    width: 100% !important;
+    height: fit-content;
+  }
+  .top-search{
+    padding:  0 9px;
+  }
+  .details-advanced{
+    padding: 0 !important;
   }
   .custom-select-boxes,
   .input-boxes-search {
-    width: 200px;
+    width: 100% !important;
   }
 }
 
@@ -82,6 +103,9 @@
   .custom-select-boxes,
   .input-boxes-search {
     width: 170px;
+  }
+  .top-section-title-sim span {
+    font-size: 20px;
   }
 }
 

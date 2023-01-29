@@ -13,11 +13,12 @@
 * {
   direction: rtl;
   outline: unset;
+  font-family: "IRANYekanX";
 }
 body {
   box-sizing: border-box;
   background-color: #f7f7ff;
-  font-family: IRANYekanX;
+  overflow-x: hidden !important;
 }
 a {
   text-decoration: none;
@@ -238,7 +239,8 @@ header .nav-desktop .navbar-nav a:hover {
 .submenu .list-sim-menu p {
   text-align: right;
 }
-.list-button , .grid-button{
+.list-button,
+.grid-button {
   height: 40px;
   width: 144px;
   border: 1px solid var(--gray-color);
@@ -309,7 +311,7 @@ header .nav-desktop .navbar-nav a:hover {
   border-radius: 8px;
   margin: 8px;
 }
-.input-boxes-search   {
+.input-boxes-search {
   width: 180px;
   height: 40px;
   background: var(--white-color);
@@ -325,7 +327,7 @@ header .nav-desktop .navbar-nav a:hover {
   border-radius: 8px;
   border: 1px solid var(--gray-color);
   color: var(--white-color);
-  margin-top: 16px;
+  margin: 16px 0;
 }
 .bottpm-search {
   display: flex;
@@ -358,7 +360,7 @@ header .nav-desktop .navbar-nav a:hover {
 }
 .code-simcart-list .container-custom {
   justify-content: space-between;
-  display: flex; 
+  display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -444,11 +446,28 @@ td {
   font-family: "IRANYekanX600";
 }
 .card-grid-list-tel {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  justify-items: center;
+  gap: 10px;
 }
-.grid-cars-list .box-card {
+@media (max-width: 991px) {
+  .card-grid-list-tel {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media all and (max-width: 768px) {
+  .card-grid-list-tel {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .box-card {
+    flex-direction: column !important;
+  }
+}
+
+.grid-cars-list .card-items {
+  display: flex !important;
+  flex-direction: column;
   box-shadow: 0px -1px 12px rgba(0, 0, 0, 0.08),
     0px 6px 12px rgba(0, 0, 0, 0.08);
   border-radius: 16px;
@@ -491,6 +510,7 @@ td {
   line-height: 45px;
   color: #1a8ce7;
 }
+
 .box-card .title-box-card p {
   padding: 15px 27px;
 }
@@ -502,7 +522,7 @@ td {
   font-size: 16px;
   line-height: 23px;
   text-align: center;
-  color: #6b8289;
+  color: var(--text-gray);
   padding: 8px 0;
 }
 .box-card .details-list-tel strong {
@@ -514,6 +534,24 @@ td {
   color: var(--purple-color);
   display: block;
   padding: 0 0 16px 0;
+}
+
+@media all and (max-width: 768px) {
+  .box-card {
+    width: 85% !important;
+  }
+  .box-card .title-box-card {
+    font-size: 17px !important;
+  }
+  .box-card .details-list-tel strong {
+    font-size: 17px;
+  }
+  .box-card .details-list-tel a {
+    padding: 9px 20px !important;
+  }
+  .pt16-px24 {
+    padding: 0 !important;
+  }
 }
 .box-card .details-list-tel a {
   border: 1px solid var(--purple-color);
@@ -549,6 +587,15 @@ td {
   align-content: center;
 }
 @media only screen and (max-width: 600px) {
+  .intro {
+    width: 97% !important;
+    margin: 0 auto !important;
+  }
+  .intro .banner {
+    border-radius: 10px;
+    background-size: contain;
+    height: 170px !important;
+  }
   .items-list {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -810,3 +857,204 @@ td {
   }
 }
 /* Footer */
+
+.accordion-button img {
+  width: 48px;
+  height: 48px;
+}
+
+.accordion-button span {
+  font-family: "IRANYekanX600";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--purple-color);
+  margin-right: 16px;
+}
+.accordion-item {
+  margin: 24px 0;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+}
+.accordion-item .accordion-button {
+  border-radius: 16px;
+}
+.accordion-item:first-of-type .accordion-button {
+  border-radius: 16px;
+}
+.accordion-item:first-of-type,
+.accordion-item:last-of-type .accordion-button.collapsed,
+.accordion-item:last-of-type {
+  border-radius: 16px;
+}
+.accordion-button:not(.collapsed) {
+  background-color: var(--white-color);
+  box-shadow: unset;
+}
+.accordion-body ul li p {
+  font-family: "IRANYekanX400";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: right;
+  color: var(--purple-color);
+}
+.title-page {
+  text-align: center;
+}
+.title-page h6 {
+  font-family: "IRANYekanX600";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 39px;
+  color: var(--purple-color);
+  margin: 56px 0 8px 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--purple-color);
+  font-family: "IRANYekanX600";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--purple-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--purple-color);
+}
+.mobile-offcanvas .dropdown-menu {
+  border: unset;
+}
+.mobile-offcanvas .dropdown-item {
+  padding: 0.25rem 0;
+}
+.mobile-offcanvas .dropdown-toggle::after {
+  content: none;
+}
+.mobile-offcanvas .navbar-nav {
+  width: 100%;
+}
+.mobile-offcanvas .nav-link.dropdown-toggle.show {
+  color: #1a8ce7;
+}
+.info-simcart-single,
+.send-massage-to-seller {
+  background: var(--white-color);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 24px;
+  padding: 32px;
+  margin-top: 32px;
+  margin-bottom: 48px;
+}
+.details-simcart-single {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-section-title-sim {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--gray-color);
+  padding-bottom: 32px;
+}
+.top-section-title-sim span {
+  font-family: "IRANYekanX600";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 39px;
+  color: var(--purple-color);
+}
+.top-section-title-sim img {
+  margin-left: 16px;
+  width: 54px;
+  height: 54px;
+}
+.buy-box-simcart-single {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 267px;
+  background: #e8f3fd;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+}
+.details-simcart-single h6 {
+  font-family: "IRANYekanX600";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--purple-color);
+  margin-top: 32px;
+}
+.details-simcart-single ul {
+  padding-right: 17px;
+}
+.details-simcart-single ul li {
+  padding-top: 16px;
+}
+.details-simcart-single ul li span {
+  font-family: "IRANYekanX400";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--text-gray);
+}
+.details-simcart-single ul li span strong {
+  font-family: "IRANYekanX400";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #051d30;
+}
+
+.buy-box-simcart-single p {
+  font-family: "IRANYekanX400";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  color: var(--text-gray);
+  margin-bottom: 20px;
+}
+.buy-box-simcart-single strong {
+  font-family: "IRANYekanX600";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  color: var(--purple-color);
+}
+.buy-box-simcart-single button,
+.buy-box-simcart-single a {
+  width: 223px;
+  margin: 0 auto;
+}
+.cancel-massage {
+  width: 80px;
+  height: 40px;
+  border: 1px solid #051d30;
+  border-radius: 8px;
+  background-color: var(--white-color);
+}
+
+.send-massage-to-seller .form-control {
+  background: var(--white-color);
+  border: 1px solid var(--gray-color);
+  border-radius: 8px;
+  box-shadow: unset;
+}

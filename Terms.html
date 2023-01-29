@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header-bg">
+            <div class="container-custom">
+                <div class="top-header">
+                    <div class="right-top-head">
+                        <div>
+                            <i class="bi bi-telephone"></i>
+                            پشتیبانی: 021-28423232
+                        </div>
+                        <div class="pr-37">
+                            <i class="bi bi-calendar-event"></i>
+                            امروز: <span id="demo"></span>
+                        </div>
+                    </div>
+                    <div class="left-top-head">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <ul class="social-icons">
+                                <li>
+                                    <a class="facebook" href="#"><i class="bi bi-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a class="twitter" href="#"><i class="bi bi-whatsapp"></i></a>
+                                </li>
+                                <li>
+                                    <a class="dribbble" href="#"><i class="bi bi-youtube"></i></a>
+                                </li>
+                                <li>
+                                    <a class="linkedin" href="#"><i class="bi bi-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a class="linkedin" href="#"><i class="bi bi-telegram"></i></a>
+                                </li>
+                                <li>
+                                    <a class="linkedin" href="#"><i class="bi bi-facebook"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-mobile">
+            <div class="d-flex justify-content-between align-items-center w-100">
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <i class="bi bi-list"></i>
+                </button>
+                <img src="assets/img/Rond-Bazar-Logo-1-copy copy 1.png" alt="logo" style="height: 40px; width: 40px" />
+                <div>
+                    <i class="bi bi-usb-drive"></i>
+                </div>
+            </div>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasLeftLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                    <div class="m-auto">
+                        <a class="navbar-brand" href="#">
+                            <img src="assets/img/Rond-Bazar-Logo-1-copy copy 1.png" alt="logo" width="70" height="70"
+                                class="d-inline-block align-text-top" />
+                        </a>
+                    </div>
+                </div>
+                <div class="offcanvas-body">
+                    <div>
+                        <button onclick="myFunction()">Try it</button>
+
+                        <div id="myDIV">
+                            This is my DIV element.
+                        </div>
+                        <div class="btn-open-menu" onclick="myFunction()" id="myDiv">
+                            <p>همراه اول</p>
+                        </div>
+                        <ul class="list-menu-dropDown">
+                            <li>
+                                <a href="#">ایرانسل</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-light nav-desktop bg-white nav-desktop">
+            <div class="container-custom">
+                <div class="d-flex align-items-center">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/img/Rond-Bazar-Logo-1-copy copy 1.png" alt="logo" width="70" height="70"
+                            class="d-inline-block align-text-top" />
+                    </a>
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="container-fluid">
+                            <div class="navbar-nav">
+                                <a class="nav-link" aria-current="page" href="#" onclick="ToggleMenu()">
+                                    همراه اول
+                                    <i class="bi bi-chevron-down"></i>
+                                    <div class="submenu-wrap" id="subMenu">
+                                        <div class="submenu">
+                                            <div class="list-sim-menu">
+                                                <ul>
+                                                    <p>همراه اول دائمی</p>
+                                                    <li>
+                                                        <a href="#"> 0912 </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> 0912 </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> 0912 </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> 0912 </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> 0912 </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> 0912 </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> 0912 </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> 0912 </a>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <div class="text-start">
+                                                        <p>همراه اول اعتباری</p>
+                                                    </div>
+                                                    <li>
+                                                        <a href="#"> 0912 </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> 0912 </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> 0912 </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> 0912 </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> 0912 </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> 0912 </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> 0912 </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> 0912 </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="nav-link" href="#">
+                                    ایرانسل
+                                    <i class="bi bi-chevron-down"></i></a>
+                                <a class="nav-link" href="#">اخبار مهم</a>
+                                <a class="nav-link" href="#">وبلاگ</a>
+                                <a class="nav-link" href="#">درباره رند بازار</a>
+                                <a class="nav-link" href="#">تماس باما</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-custom">
+            <div class="title-page">
+                <h6 >
+                    قوانین و مقررات
+                </h6>
+                <p>مطالعه قوانین و مقررات رندبازار به منظور استفاده از خدمات سامانه برای عموم کاربران لازم الرعایه می
+                    باشد.</p>
+            </div>
+            <div>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <img src="assets/img/Frame 1319.png" alt="">
+                                <span>قوانین ایجاد و استفاده از فروشگاه اینترنتی</span>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <p>هر نوع فعالیت مغایر با اصول حرفه ای ، قانونی،حقوقی و عرفی با مشتریان چه به
+                                            لحاظ اخلاقی و چه به لحاظ عدم انجام به موقع تعهدات مالی ، نقل و انتقال سند و
+                                            هر دلیل دیگر که باعث بدنامی سایت و دیگر فروشگاههای معتبر و فعال در سایت گردد
+                                            ممنوع است و در صورت اثبات به مسولین وب سایت، حساب کاربری فروشنده خاطی بدون
+                                            اطلاع قبلی مسدود شده و از ادامه فعالیت وی جلوگیری می شود. به عبارتی کلیه
+                                            مسولیتهای فروشگاه ها در مقابل مشتریان حقیقی و حقوقی متوجه خود فروشگاه است.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            در صورتی که فروشگاهی به مدت ۹۰ روز هیچ فعالیتی در سایت نداشته باشد رندبازار
+                                            مجاز به حذف نشانی اینترنتی ثبت شده بدون اطلاع قبلی است .
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            تمام فروشگاهها ملزم به رعایت کلیه قوانین کلی حاکم بر فعالیتهای بازرگانی و
+                                            قواعد خاص هر اپراتور در خصوص خرید و فروش سیم کارت هستند. </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            تمام فروشگاه ها ملزم به رعایت قوانین جرایم رایانه ای هستند. </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            در صورت مشاهده هر گونه تخلف در درج اطلاعات ، رندبازار مجاز به حذف یا ویرایش
+                                            این اطلاعات و برخورد قانونی با کاربر است. </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            رندبازار حق هر گونه تغییر در طرح ها، تعرفه ها و یا امکانات سایت را برای خود
+                                            محفوظ می داند. </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            ثبت اسامی برندهای معروف و مرتبط بدون اطلاع ایشان قابل پیگیری قانونی است و در
+                                            صورت رعایت نشدن مسولیت با کاربر ثبت کننده نام است. </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            تمامی فروشگاهها ملزم به رعایت کلیه قوانین مربوط به درج آگهی فروش سیم کارت (در همین صفحه) هستند.</p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            تمامی اشخاص حقیقی و حقوقی که اقدام به ایجاد فروشگاه و فروش سیم کارت در سایت رندباز می کنند موظف هستند اطلاعات تماس و آدرس خود را به طور صحیح و کامل درج نمایند. در صورت مشاهده هرگونه تخلف به فروشنده تذکر داده میشود و در صورت اصلاح نشدن اطلاعات، رندباز مجاز به اصلاح اطلاعات و در نهایت حذف حساب کاربری متخلف است.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <img src="assets/img/Frame 1318.png" alt="">
+                                <span>قوانین ثبت آگهی فروش سیم کارت</span>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <p>هر نوع فعالیت مغایر با اصول حرفه ای ، قانونی،حقوقی و عرفی با مشتریان چه به
+                                            لحاظ اخلاقی و چه به لحاظ عدم انجام به موقع تعهدات مالی ، نقل و انتقال سند و
+                                            هر دلیل دیگر که باعث بدنامی سایت و دیگر فروشگاههای معتبر و فعال در سایت گردد
+                                            ممنوع است و در صورت اثبات به مسولین وب سایت، حساب کاربری فروشنده خاطی بدون
+                                            اطلاع قبلی مسدود شده و از ادامه فعالیت وی جلوگیری می شود. به عبارتی کلیه
+                                            مسولیتهای فروشگاه ها در مقابل مشتریان حقیقی و حقوقی متوجه خود فروشگاه است.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            در صورتی که فروشگاهی به مدت ۹۰ روز هیچ فعالیتی در سایت نداشته باشد رندبازار
+                                            مجاز به حذف نشانی اینترنتی ثبت شده بدون اطلاع قبلی است .
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            تمام فروشگاهها ملزم به رعایت کلیه قوانین کلی حاکم بر فعالیتهای بازرگانی و
+                                            قواعد خاص هر اپراتور در خصوص خرید و فروش سیم کارت هستند. </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            تمام فروشگاه ها ملزم به رعایت قوانین جرایم رایانه ای هستند. </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            در صورت مشاهده هر گونه تخلف در درج اطلاعات ، رندبازار مجاز به حذف یا ویرایش
+                                            این اطلاعات و برخورد قانونی با کاربر است. </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            رندبازار حق هر گونه تغییر در طرح ها، تعرفه ها و یا امکانات سایت را برای خود
+                                            محفوظ می داند. </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            ثبت اسامی برندهای معروف و مرتبط بدون اطلاع ایشان قابل پیگیری قانونی است و در
+                                            صورت رعایت نشدن مسولیت با کاربر ثبت کننده نام است. </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            تمامی فروشگاهها ملزم به رعایت کلیه قوانین مربوط به درج آگهی فروش سیم کارت (در همین صفحه) هستند.</p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            تمامی اشخاص حقیقی و حقوقی که اقدام به ایجاد فروشگاه و فروش سیم کارت در سایت رندباز می کنند موظف هستند اطلاعات تماس و آدرس خود را به طور صحیح و کامل درج نمایند. در صورت مشاهده هرگونه تخلف به فروشنده تذکر داده میشود و در صورت اصلاح نشدن اطلاعات، رندباز مجاز به اصلاح اطلاعات و در نهایت حذف حساب کاربری متخلف است.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                <img src="assets/img/Frame 1323.png" alt="">
+                                <span>قوانین فروش آنلاین سیم کارت</span>
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <p>هر نوع فعالیت مغایر با اصول حرفه ای ، قانونی،حقوقی و عرفی با مشتریان چه به
+                                            لحاظ اخلاقی و چه به لحاظ عدم انجام به موقع تعهدات مالی ، نقل و انتقال سند و
+                                            هر دلیل دیگر که باعث بدنامی سایت و دیگر فروشگاههای معتبر و فعال در سایت گردد
+                                            ممنوع است و در صورت اثبات به مسولین وب سایت، حساب کاربری فروشنده خاطی بدون
+                                            اطلاع قبلی مسدود شده و از ادامه فعالیت وی جلوگیری می شود. به عبارتی کلیه
+                                            مسولیتهای فروشگاه ها در مقابل مشتریان حقیقی و حقوقی متوجه خود فروشگاه است.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            در صورتی که فروشگاهی به مدت ۹۰ روز هیچ فعالیتی در سایت نداشته باشد رندبازار
+                                            مجاز به حذف نشانی اینترنتی ثبت شده بدون اطلاع قبلی است .
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            تمام فروشگاهها ملزم به رعایت کلیه قوانین کلی حاکم بر فعالیتهای بازرگانی و
+                                            قواعد خاص هر اپراتور در خصوص خرید و فروش سیم کارت هستند. </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            تمام فروشگاه ها ملزم به رعایت قوانین جرایم رایانه ای هستند. </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            در صورت مشاهده هر گونه تخلف در درج اطلاعات ، رندبازار مجاز به حذف یا ویرایش
+                                            این اطلاعات و برخورد قانونی با کاربر است. </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            رندبازار حق هر گونه تغییر در طرح ها، تعرفه ها و یا امکانات سایت را برای خود
+                                            محفوظ می داند. </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            ثبت اسامی برندهای معروف و مرتبط بدون اطلاع ایشان قابل پیگیری قانونی است و در
+                                            صورت رعایت نشدن مسولیت با کاربر ثبت کننده نام است. </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            تمامی فروشگاهها ملزم به رعایت کلیه قوانین مربوط به درج آگهی فروش سیم کارت (در همین صفحه) هستند.</p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            تمامی اشخاص حقیقی و حقوقی که اقدام به ایجاد فروشگاه و فروش سیم کارت در سایت رندباز می کنند موظف هستند اطلاعات تماس و آدرس خود را به طور صحیح و کامل درج نمایند. در صورت مشاهده هرگونه تخلف به فروشنده تذکر داده میشود و در صورت اصلاح نشدن اطلاعات، رندباز مجاز به اصلاح اطلاعات و در نهایت حذف حساب کاربری متخلف است.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <img src="assets/img/Frame 1323 (1).png" alt="">
+                                <span>قوانین خرید سیم کارت</span>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <p>هر نوع فعالیت مغایر با اصول حرفه ای ، قانونی،حقوقی و عرفی با مشتریان چه به
+                                            لحاظ اخلاقی و چه به لحاظ عدم انجام به موقع تعهدات مالی ، نقل و انتقال سند و
+                                            هر دلیل دیگر که باعث بدنامی سایت و دیگر فروشگاههای معتبر و فعال در سایت گردد
+                                            ممنوع است و در صورت اثبات به مسولین وب سایت، حساب کاربری فروشنده خاطی بدون
+                                            اطلاع قبلی مسدود شده و از ادامه فعالیت وی جلوگیری می شود. به عبارتی کلیه
+                                            مسولیتهای فروشگاه ها در مقابل مشتریان حقیقی و حقوقی متوجه خود فروشگاه است.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            در صورتی که فروشگاهی به مدت ۹۰ روز هیچ فعالیتی در سایت نداشته باشد رندبازار
+                                            مجاز به حذف نشانی اینترنتی ثبت شده بدون اطلاع قبلی است .
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            تمام فروشگاهها ملزم به رعایت کلیه قوانین کلی حاکم بر فعالیتهای بازرگانی و
+                                            قواعد خاص هر اپراتور در خصوص خرید و فروش سیم کارت هستند. </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            تمام فروشگاه ها ملزم به رعایت قوانین جرایم رایانه ای هستند. </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            در صورت مشاهده هر گونه تخلف در درج اطلاعات ، رندبازار مجاز به حذف یا ویرایش
+                                            این اطلاعات و برخورد قانونی با کاربر است. </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            رندبازار حق هر گونه تغییر در طرح ها، تعرفه ها و یا امکانات سایت را برای خود
+                                            محفوظ می داند. </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            ثبت اسامی برندهای معروف و مرتبط بدون اطلاع ایشان قابل پیگیری قانونی است و در
+                                            صورت رعایت نشدن مسولیت با کاربر ثبت کننده نام است. </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            تمامی فروشگاهها ملزم به رعایت کلیه قوانین مربوط به درج آگهی فروش سیم کارت (در همین صفحه) هستند.</p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            تمامی اشخاص حقیقی و حقوقی که اقدام به ایجاد فروشگاه و فروش سیم کارت در سایت رندباز می کنند موظف هستند اطلاعات تماس و آدرس خود را به طور صحیح و کامل درج نمایند. در صورت مشاهده هرگونه تخلف به فروشنده تذکر داده میشود و در صورت اصلاح نشدن اطلاعات، رندباز مجاز به اصلاح اطلاعات و در نهایت حذف حساب کاربری متخلف است.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <img src="assets/img/Frame 1323 (2).png" alt="">
+                                <span>قوانین تبلیغات</span>
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        <p>هر نوع فعالیت مغایر با اصول حرفه ای ، قانونی،حقوقی و عرفی با مشتریان چه به
+                                            لحاظ اخلاقی و چه به لحاظ عدم انجام به موقع تعهدات مالی ، نقل و انتقال سند و
+                                            هر دلیل دیگر که باعث بدنامی سایت و دیگر فروشگاههای معتبر و فعال در سایت گردد
+                                            ممنوع است و در صورت اثبات به مسولین وب سایت، حساب کاربری فروشنده خاطی بدون
+                                            اطلاع قبلی مسدود شده و از ادامه فعالیت وی جلوگیری می شود. به عبارتی کلیه
+                                            مسولیتهای فروشگاه ها در مقابل مشتریان حقیقی و حقوقی متوجه خود فروشگاه است.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            در صورتی که فروشگاهی به مدت ۹۰ روز هیچ فعالیتی در سایت نداشته باشد رندبازار
+                                            مجاز به حذف نشانی اینترنتی ثبت شده بدون اطلاع قبلی است .
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            تمام فروشگاهها ملزم به رعایت کلیه قوانین کلی حاکم بر فعالیتهای بازرگانی و
+                                            قواعد خاص هر اپراتور در خصوص خرید و فروش سیم کارت هستند. </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            تمام فروشگاه ها ملزم به رعایت قوانین جرایم رایانه ای هستند. </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            در صورت مشاهده هر گونه تخلف در درج اطلاعات ، رندبازار مجاز به حذف یا ویرایش
+                                            این اطلاعات و برخورد قانونی با کاربر است. </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            رندبازار حق هر گونه تغییر در طرح ها، تعرفه ها و یا امکانات سایت را برای خود
+                                            محفوظ می داند. </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            ثبت اسامی برندهای معروف و مرتبط بدون اطلاع ایشان قابل پیگیری قانونی است و در
+                                            صورت رعایت نشدن مسولیت با کاربر ثبت کننده نام است. </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            تمامی فروشگاهها ملزم به رعایت کلیه قوانین مربوط به درج آگهی فروش سیم کارت (در همین صفحه) هستند.</p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            تمامی اشخاص حقیقی و حقوقی که اقدام به ایجاد فروشگاه و فروش سیم کارت در سایت رندباز می کنند موظف هستند اطلاعات تماس و آدرس خود را به طور صحیح و کامل درج نمایند. در صورت مشاهده هرگونه تخلف به فروشنده تذکر داده میشود و در صورت اصلاح نشدن اطلاعات، رندباز مجاز به اصلاح اطلاعات و در نهایت حذف حساب کاربری متخلف است.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-3">
+                    <div class="d-flex align-items-center mb-1">
+                        <img src="assets/img/Frame 354.png" alt="" />
+                        <p class="ms-3">رند بازار</p>
+                    </div>
+                    <span class="text-justify">مجموعه رندبازار پس از 10 سال کار در زمینه سیم
+                        کارت در سال 1394 به صورت تخصصی در حوزه خرید و
+                        فروش سیم کارت به صورت آنلاین شروع به کار
+                        کرد.</span>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>خدمات رند بازار</h6>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="http://scanfcode.com/category/c-language/">قوانین و مقررات</a>
+                        </li>
+                        <li>
+                            <a href="http://scanfcode.com/category/front-end-development/">درباره ما</a>
+                        </li>
+                        <li>
+                            <a href="http://scanfcode.com/category/back-end-development/">تماس با ما</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-2">
+                    <h6>اطلاعات بیشتر</h6>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="http://scanfcode.com/category/c-language/">قوانین و مقررات</a>
+                        </li>
+                        <li>
+                            <a href="http://scanfcode.com/category/front-end-development/">درباره ما</a>
+                        </li>
+                        <li>
+                            <a href="http://scanfcode.com/category/back-end-development/">تماس با ما</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <h6>پشتیبانی رند بازار همیشه پاسخگو شماست</h6>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="tel:+982128423232"><i class="bi bi-telephone"></i>021-28423232</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bi bi-envelope"></i>
+                                info@romdbazar.com</a>
+                        </li>
+                        <li>
+                            <a href="#/"><i class="bi bi-geo-alt"></i> تهران،
+                                خیابان ولیعصر، بالاتر از امانیه، نرسیده به
+                                پل پارک وی، روبروی بی آر تی پارک وی، دفتر
+                                پیشخوان دولت</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid py-1" style="background-color: #d1e8fa">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-12 col-xs-12">
+                        <p class="copyright-text">
+                            تمامی حقوق این وبسایت به رندبازار تعلق دارد.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <ul class="social-icons">
+                            <li>
+                                <a class="facebook" href="#"><i class="bi bi-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a class="twitter" href="#"><i class="bi bi-whatsapp"></i></a>
+                            </li>
+                            <li>
+                                <a class="dribbble" href="#"><i class="bi bi-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a class="linkedin" href="#"><i class="bi bi-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a class="linkedin" href="#"><i class="bi bi-telegram"></i></a>
+                            </li>
+                            <li>
+                                <a class="linkedin" href="#"><i class="bi bi-facebook"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        let subMenu = document.getElementById("subMenu");
+        function ToggleMenu() {
+            subMenu.classList.toggle("openmenu");
+        }
+        var date = new Date();
+        var current_date =
+            date.getFullYear() +
+            "-" +
+            (date.getMonth() + 1) +
+            "-" +
+            date.getDate();
+        document.getElementById("demo").innerHTML =
+            current_date;
+
+
+    </script>
+</body>
+
+</html>
