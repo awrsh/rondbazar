@@ -48,6 +48,9 @@ input::placeholder {
   padding: 10px 16px;
   font-size: 13px;
 }
+.ltr {
+  direction: ltr !important;
+}
 .container-custom {
   max-width: 1200px;
   width: 100%;
@@ -301,6 +304,7 @@ header .nav-desktop .navbar-nav a:hover {
   border: 1px solid var(--gray-color);
   border-radius: 8px;
   margin: 8px;
+  text-align: center;
 }
 
 .custom-select-boxes {
@@ -382,6 +386,14 @@ header .nav-desktop .navbar-nav a:hover {
   border-radius: 24px;
   margin: 0 0 32px 8px;
 }
+.box-code-simcart .list-simcart p {
+  font-family: "IRANYekanX600";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--purple-color);
+}
 .box-code-simcart .list-simcart > div {
   padding: 9px 9.2px 16px 9.6px;
 }
@@ -433,7 +445,7 @@ td {
   background: var(--white-color);
   box-shadow: 0px 6px 12px rgb(0 0 0 / 8%);
   border-radius: 24px;
-  width: 1178px;
+  width: 100%;
   padding-top: 2rem;
 }
 .table-line-list h6 {
@@ -494,7 +506,7 @@ td {
   flex-wrap: wrap;
   justify-content: center;
   width: 270px;
-  height: 254px;
+  height: 285px;
   background: #ffffff;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.08);
   border-radius: 16px;

@@ -56,13 +56,13 @@
         </div>
         <div class="nav-mobile">
             <div class="d-flex justify-content-between align-items-center w-100">
-                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                    <i class="bi bi-list"></i>
+                <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight">
+                    <img src="assets/img/gg_menu-right.png" alt="">
                 </button>
                 <img src="assets/img/Rond-Bazar-Logo-1-copy copy 1.png" alt="logo" style="height: 40px; width: 40px" />
                 <div>
-                    <i class="bi bi-usb-drive"></i>
+                    <img src="assets/img/Icon-user.png" alt="">
                 </div>
             </div>
 
@@ -79,21 +79,44 @@
                     </div>
                 </div>
                 <div class="offcanvas-body">
-                    <div>
-                        <button onclick="myFunction()">Try it</button>
+                    <nav id="navbar_main" class="mobile-offcanvas navbar navbar-expand-lg navbar-dark  show">
+                        <div class="container-fluid">
+                            <ul class="navbar-nav me-auto">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                        aria-expanded="false"> همراه اول <i class="bi bi-chevron-down"></i> </a>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li><a class="dropdown-item" href="#"> 0912</a></li>
+                                        <li><a class="dropdown-item" href="#"> 0915 </a></li>
+                                        <li><a class="dropdown-item" href="#"> 0915 </a></li>
+                                        <li><a class="dropdown-item" href="#"> 0915 </a></li>
+                                        <li><a class="dropdown-item" href="#"> 0915 </a></li>
+                                        <li><a class="dropdown-item" href="#"> 0915 </a></li>
+                                        <li><a class="dropdown-item" href="#"> 0915 </a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                        aria-expanded="false"> ایرانسل <i class="bi bi-chevron-down"></i> </a>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li><a class="dropdown-item" href="#"> 0912</a></li>
+                                        <li><a class="dropdown-item" href="#"> 0915 </a></li>
+                                        <li><a class="dropdown-item" href="#"> 0915 </a></li>
+                                        <li><a class="dropdown-item" href="#"> 0915 </a></li>
+                                        <li><a class="dropdown-item" href="#"> 0915 </a></li>
+                                        <li><a class="dropdown-item" href="#"> 0915 </a></li>
+                                        <li><a class="dropdown-item" href="#"> 0915 </a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="#"> اخبار مهم </a></li>
+                                <li class="nav-item"><a class="nav-link" href="#"> وبلاگ </a></li>
+                                <li class="nav-item"><a class="nav-link" href="#"> درباره رند بازار </a></li>
+                                <li class="nav-item"><a class="nav-link" href="#"> تماس با ما </a></li>
 
-                        <div id="myDIV">
-                            This is my DIV element.
-                        </div>
-                        <div class="btn-open-menu" onclick="myFunction()" id="myDiv">
-                            <p>همراه اول</p>
-                        </div>
-                        <ul class="list-menu-dropDown">
-                            <li>
-                                <a href="#">ایرانسل</a>
-                            </li>
-                        </ul>
-                    </div>
+                            </ul>
+
+                        </div> <!-- container-fluid.// -->
+                    </nav>
                 </div>
             </div>
         </div>
@@ -188,6 +211,7 @@
             </div>
         </nav>
     </header>
+
 
     <main>
         <div class="container-custom">
